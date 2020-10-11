@@ -11,12 +11,14 @@
             <div class="col-md-8">
                 <div class="card card-default">
                     <div class="card-header">
-                        Article
+                        Description
                     </div>
                     <div class="card-body">
                         {{$todo->description}}
                     </div>
                 </div>
+                <a href="/todos/{{$todo->id}}/edit" class="btn btn-info btn-sma my-2">Edit</a>
+                <a href="/todos/{{$todo->id}}/destroy" class="btn btn-danger btn-sma my-2">Delete</a>
             </div>
         </div>
 @endsection
